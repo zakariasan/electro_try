@@ -1,0 +1,41 @@
+
+long    Led_A = 2;
+long    Led_B = 7;
+long    Led_C = 6;
+long    Led_D = 5;
+long    Led_E = 4;
+long    Led_F = 3;
+long    Led_G = 8;
+float    value;
+int i;
+void setup()
+{
+    i = 2;
+    while(i <= 8)
+    {
+        pinMode(i, OUTPUT);
+    }
+    Serial.begin(9600);
+}
+
+void loop()
+{
+    aff_0();
+    delay(1000);
+    aff_1();
+}
+void reset()
+{
+
+    digitalWrite(Led_A,HIGH );
+    digitalWrite(Led_B, HIGH);
+    digitalWrite(Led_C, HIGH);
+    digitalWrite(Led_D, HIGH);
+    digitalWrite(Led_E, HIGH);
+    digitalWrite(Led_F, HIGH);
+    digitalWrite(Led_G, HIGH);
+}
+void aff_0()
+{
+    digitalWrite(, );
+}
